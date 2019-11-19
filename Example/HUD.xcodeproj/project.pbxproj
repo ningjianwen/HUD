@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		1C540208386D9A5D8934E5D7 /* Pods-HUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUD_Tests.release.xcconfig"; path = "Target Support Files/Pods-HUD_Tests/Pods-HUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		40AE503BDA8AFA1C7E1941D7 /* Pods-HUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUD_Example.release.xcconfig"; path = "Target Support Files/Pods-HUD_Example/Pods-HUD_Example.release.xcconfig"; sourceTree = "<group>"; };
-		58BD38A674D354D2FF135B9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		58BD38A674D354D2FF135B9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +41,9 @@
 		607FACE51AFB9204008FA782 /* HUD_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		91804C3640CF47B728D234AE /* HUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HUD.podspec; path = ../HUD.podspec; sourceTree = "<group>"; };
+		91804C3640CF47B728D234AE /* HUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HUD.podspec; path = ../HUD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AA7CD02F756139BBA382833 /* Pods-HUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUD_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HUD_Tests/Pods-HUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CED7057BEE1195DD45DC75BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CED7057BEE1195DD45DC75BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D5762DA52F8AB4E374F800E3 /* Pods_HUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC98635EF7305760CC20469 /* Pods_HUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDABC5ED3F50767AFE3B4DD6 /* Pods-HUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUD_Example.debug.xcconfig"; path = "Target Support Files/Pods-HUD_Example/Pods-HUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				9AA7CD02F756139BBA382833 /* Pods-HUD_Tests.debug.xcconfig */,
 				1C540208386D9A5D8934E5D7 /* Pods-HUD_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -333,10 +333,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HUD_Example/Pods-HUD_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HUD/HUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

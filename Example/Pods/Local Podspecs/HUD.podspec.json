@@ -1,0 +1,34 @@
+{
+  "name": "HUD",
+  "version": "0.1.0",
+  "summary": "A short description of HUD.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ningjianwen/HUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ningjianwen": "ningjianwen@yeah.ent"
+  },
+  "source": {
+    "git": "https://github.com/ningjianwen/HUD.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "4.0",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HUD/Classes/**/*",
+  "resource_bundles": {
+    "HUD": [
+      "HUD/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ]
+  },
+  "swift_version": "4.0"
+}

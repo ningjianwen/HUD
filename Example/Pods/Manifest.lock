@@ -1,0 +1,32 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HUD (0.1.0):
+    - MBProgressHUD (~> 1.1.0)
+  - MBProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - HUD (from `../`)
+  - MBProgressHUD (~> 1.1.0)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  HUD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HUD: d29082efbe10136af53abd86efe412e165dc6891
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+
+PODFILE CHECKSUM: 76c714c52b984d5f3da17b66ac41caeecad53fdd
+
+COCOAPODS: 1.8.4
