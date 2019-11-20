@@ -1,5 +1,5 @@
 use_frameworks!
-
+source 'https://github.com/CocoaPods/Specs.git'
 target 'HUD_Example' do
   pod 'HUD', :path => '../'
   pod 'MBProgressHUD', '~> 1.1.0'
